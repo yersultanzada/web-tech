@@ -305,29 +305,29 @@ img::-moz-selection {
   }
 }
 
-.menu-modal .modal-dialog {
+.menu-modal#menuModal .modal-dialog {
   margin: 0;
   max-width: 100vw;
 }
 
-.menu-modal .modal-content {
+.menu-modal#menuModal .modal-content {
   text-align: center;
   min-height: 100vh;
   border: none;
   border-radius: 0;
 }
 
-.menu-modal .modal-content .modal-body {
+.menu-modal#menuModal .modal-content .modal-body {
   padding: 20px 25px;
 }
 
-.menu-modal .modal-content .modal-body a.menu_logo {
+.menu-modal#menuModal .modal-content .modal-body a.menu_logo {
   font-size: 1.5em;
   font-weight: 700;
   color: #3c506f;
 }
 
-.menu-modal .modal-content .modal-body .request_btn {
+.menu-modal#menuModal .modal-content .modal-body .request_btn {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -335,7 +335,105 @@ img::-moz-selection {
   transform: translate(-50%, 0);
 }
 
-.menu-modal .close-modal {
+.menu-modal#menuModal .close-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 1000;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.mainNav2-top {
+  background-color: #a8b7d5;
+}
+
+#mainNav2 {
+  background-color: #c5d5ee;
+}
+
+#mainNav2 .navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #3c506f;
+}
+
+#mainNav2 .navbar-brand.active, #mainNav2 .navbar-brand:active, #mainNav2 .navbar-brand:focus, #mainNav2 .navbar-brand:hover {
+  color: #2a384e;
+}
+
+#mainNav2 .burger_menu {
+  float: right;
+  padding-top: 10px;
+}
+
+#mainNav2 .navbar-nav .nav-item .nav-link {
+  font-size: 100%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  color: #3c506f;
+}
+
+#mainNav2 .navbar-nav .nav-item .nav-link.active, #mainNav2 .navbar-nav .nav-item .nav-link:hover {
+  color: #a8b7d5;
+}
+
+#mainNav2 .request_btn a.btn {
+  margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+  #mainNav2 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: #c5d5ee;
+  }
+  #mainNav2 .navbar-brand {
+    font-size: 1.75em;
+    font-weight: bold;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav2 .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 0.5em !important;
+  }
+}
+
+.menu-modal#menuModal2 .modal-dialog {
+  margin: 0;
+  max-width: 100vw;
+}
+
+.menu-modal#menuModal2 .modal-content {
+  background-color: #c5d5ee;
+  text-align: center;
+  min-height: 100vh;
+  border: none;
+  border-radius: 0;
+}
+
+.menu-modal#menuModal2 .modal-content .modal-body {
+  padding: 20px 25px;
+}
+
+.menu-modal#menuModal2 .modal-content .modal-body a.menu_logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #3c506f;
+}
+
+.menu-modal#menuModal2 .modal-content .modal-body .request_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.menu-modal#menuModal2 .close-modal {
   position: absolute;
   top: 25px;
   right: 25px;
