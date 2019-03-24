@@ -1,0 +1,10 @@
+// Styling for the contact section
+section#contact {
+
+}
+@media (max-width: 991px) {
+  section#helper form{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
