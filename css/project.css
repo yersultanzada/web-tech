@@ -187,6 +187,23 @@ form.wt-form-rounded .btn {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.btn-white {
+  background-color: white;
+  border-color: white;
+  color: #3c506f !important;
+}
+
+.btn-white:active, .btn-white:focus, .btn-white:hover {
+  background-color: #ececec !important;
+  border-color: #ececec !important;
+  color: #3c506f !important;
+}
+
+.btn-white:active, .btn-white:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
 .wt-btn-rounded {
   border-radius: 25px;
 }
@@ -1002,6 +1019,108 @@ section#masthead .wt-block-intro .wt-intro-form {
 @media (max-width: 575px) {
   section#masthead .wt-block-intro .wt-intro-form {
     padding: 40px 25px 50px;
+  }
+}
+
+section#masthead1 {
+  position: relative;
+}
+
+section#masthead1 .wt-background-headerImg {
+  background: #3c506f;
+}
+
+section#masthead1 .wt-block-intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section#masthead1 .wt-block-intro .wt-intro-form {
+  background-color: #fff;
+  padding: 40px 100px 50px;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  section#masthead1 .wt-block-intro {
+    padding-top: 150px;
+    padding-bottom: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  section#masthead1 .wt-section-heroTitle {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  section#masthead1 .wt-block-intro .wt-intro-form {
+    padding: 40px 25px 50px;
+  }
+}
+
+section#masthead2 {
+  position: relative;
+}
+
+section#masthead2 .wt-background-headerImg {
+  background: #a8b7d5;
+}
+
+section#masthead2 .wt-block-intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section#masthead2 .wt-block-intro .wt-intro-form {
+  background-color: #fff;
+  padding: 40px 100px 50px;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  section#masthead2 .wt-block-intro {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  section#masthead2 .wt-section-heroTitle {
+    font-size: 40px;
+  }
+}
+
+section#masthead3 {
+  position: relative;
+}
+
+section#masthead3 .wt-background-headerImg {
+  background: #c5d5ee;
+}
+
+section#masthead3 .wt-block-intro {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section#masthead3 .wt-block-intro .wt-intro-form {
+  background-color: #fff;
+  padding: 40px 100px 50px;
+  border-radius: 4px;
+}
+
+@media (min-width: 992px) {
+  section#masthead3 .wt-block-intro {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  section#masthead3 .wt-section-heroTitle {
+    font-size: 40px;
   }
 }
 
