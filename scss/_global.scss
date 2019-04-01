@@ -91,6 +91,7 @@ section {
     font-size: 20px;
     line-height: 1.5;
     font-weight: 400;
+    width: 100%;
     -webkit-text-decoration: none;
     text-decoration: none;
     font-style: normal;
@@ -100,6 +101,7 @@ section {
     font-size: 26px;
     line-height: 1.31;
     font-weight: 700;
+    width: 100%;
     -webkit-text-decoration: none;
     text-decoration: none;
     font-style: normal;
@@ -109,6 +111,7 @@ section {
     font-size: 22px;
     line-height: 1.36;
     font-weight: 700;
+    width: 100%;
     -webkit-text-decoration: none;
     text-decoration: none;
     font-style: normal;
@@ -122,6 +125,11 @@ section {
     text-decoration: none;
     font-style: normal;
     letter-spacing: 0;
+  }
+  p.wt-section-small-text {
+    font-size: 12px;
+    line-height: 1.67;
+    width: 100%;
   }
 }
 

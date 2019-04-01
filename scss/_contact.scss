@@ -1,10 +1,16 @@
 // Styling for the contact section
-section#contact {
-
-}
-@media (max-width: 991px) {
-  section#helper form{
-    max-width: 500px;
-    margin: 0 auto;
+#contact2 {
+  .wt-block-contactsBg {
+    background-color: $primary-200;
+  }
+  .wt-block-contactsCenter {
+    background-color: #fff;
+    padding: 50px;
+    max-width: 450px;
+    margin: 70px auto;
+  }
+  img {
+    min-height: 552px;
+    object-fit: cover;
   }
 }
