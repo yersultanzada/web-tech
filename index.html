@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
   <head>
 
@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/project.min.css" rel="stylesheet">
@@ -27,113 +27,92 @@
   </head>
 
   <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg" id="mainNav">
-      <div class="container p-0">
-        <div class="col-lg-3">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">Quantum Company</a>
-          <a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
-            <i class="fas fa-bars"></i>
-          </a>
-        </div>
-        <div class="col-lg-9 collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact us</a>
-            </li>
-          </ul>
-          <div class="request_btn">
-            <a class="btn btn-primary wt-btn-size-sm wt-btn-rounded" href="#">Request a quote</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
     <!-- Header -->
     <section id="masthead" class="p-0">
       <div class="wt-block-background">
-        <div class="wt-background wt-background-headerImg"></div>
-        <div class="wt-background wt-background-headerOverlay"></div>
+        <div class="wt-background background_headerImg"></div>
+        <div class="wt-background background_headerOverlay"></div>
       </div>
-      <div class="container">
-        <div class="row wt-block-intro">
-            <div class="col-lg-6 align-self-center text-center text-lg-left">
-              <div class="wt-intro-text">
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container p-0">
+          <div class="col-lg-3">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+              <img src="img/logo.png" alt="" width="108">
+            </a>
+            <a class="burger_menu d-inline-block d-lg-none" data-toggle="modal" href="#menuModal">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="col-lg-9 collapse navbar-collapse text-white">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#services">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#team">Pricing</a>
+              </li>
+            </ul>
+            <div class="request_btn">
+              <a class="btn btn-primary wt-btn-size-sm wt-btn-rounded" href="#">Request a quote</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <div class="row block_intro">
+            <div class="col-md-6 align-self-center">
+              <div class="intro_text">
                 <h1 class="wt-section-heroTitle text-white mb-4">
-                  BeZee Company
+                  Organize your content with UseJoy
                 </h1>
                 <p class="wt-section-subtitle text-white">
-                  Products and services of the highest quality
+                  Smart product powered by machine learning to help you meet your clients’ needs.
                 </p>
+                <div>
+                  <a href="#" class="btn btn-white wt-btn-size-md wt-btn-rounded mr-3 mb-3">Request a quote</a>
+                  <a href="#" class="btn btn-primary wt-btn-size-md wt-btn-rounded-transparent mb-3">Learn more</a>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6 wt-text-primary">
-              <div class="wt-intro-form">
-                <h3 class="wt-section-heading text-center">
-                  Want to work with us?
-                </h3>
-                <p class="wt-section-subheading text-center">
-                  Send a request and get a complete list of our offers!
-                </p>
-                <form class="wt-form-rounded">
-                  <div class="form-group">
-                    <label for="headerInputName">Name *</label>
-                    <input type="text" class="form-control" id="headerInputName">
-                  </div>
-                  <div class="form-group">
-                    <label for="headerInputPhoneNumber">Phone number *</label>
-                    <input type="tel" class="form-control" id="headerInputPhoneNumber">
-                  </div>
-                  <button type="submit" class="btn btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
-                </form>
-              </div>
+            <div class="col-md-6 order-first order-md-last">
+              <picture class="intro_img">
+                <img src="img/main-pic.png" class="mw-100" alt="">
+              </picture>
             </div>
           </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="text-center wt-text-primary">
+    <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <img src="img/ver2.JPG" class="w-100" alt="">
-          </div>
-          <div class="col-lg-8 offset-lg-2">
-            <h2 class="wt-section-title mb-4 mt-4">
-              About the company
+          <div class="col-lg-5 align-self-center">
+            <h2 class="wt-section-title wt-text-primary mt-4">
+              About UseJoy
             </h2>
-            <p class="wt-section-text">
-              The profound expertise of our team, deep understanding of all business aspects, ideal knowledge of processes will help to deal with various issues.
+            <p class="wt-section-subtitle wt-text-neon">
+              UseJoy is a content marketing cloud created to help online media organizations.
             </p>
-            <p class="wt-section-text">
-              We create unique and innovative solutions for our customers along with the high-quality support services and personal approach to any case. Feel free to entrust your business to our experts, and you’ll see the difference!
+            <p class="wt-section-text wt-text-secondary">
+              UseJoy is powered by the technology of machine learning and applies content semantic analysis and users' actions to understand their interests and the content they usually read on websites. We use this information to deliver personified content recommendations via email or right on the website. This helps each visitor get a unique user experience.
             </p>
-            <div class="wt-block-follow mt-4">
-              <h3 class="wt-section-heading d-inline-block mb-0">
-                  Follow us:
-              </h3>
-              <ul class="d-inline-block list-inline pl-3 mb-0 align-text-bottom">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
-              <div class="mt-5">
-                <a href="#" class="btn btn-primary wt-btn-size-md wt-btn-rounded-transparent">Request a quote</a>
-              </div>
+          </div>
+          <div class="col-lg-7 order-first order-lg-last block_devices">
+            <div class="block_device_iPad">
+              <img src="img/about/about-ipad.png" class="mw-100" alt="">
+              <div class="block_iPad_pic"></div>
+            </div>
+            <div class="block_device_iPhone">
+              <img src="img/about/about-iphone.png" class="mw-100" alt="">
+              <div class="block_iPhone_pic"></div>
             </div>
           </div>
         </div>
@@ -141,147 +120,206 @@
     </section>
 
     <!-- Services -->
-    <section id="services" class="text-center wt-text-primary">
+    <section id="services">
       <div class="container">
         <div class="row">
-          <h2 class="wt-section-title mb-5">
-            Services We Provide
+          <h2 class="wt-section-title wt-text-primary text-center mb-5">
+            Possibilities
           </h2>
-          <div class="col-lg-4">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
-            </div>
-            <h3 class="wt-section-heading mt-4">
-              Business Consulting
-            </h3>
-            <p class="wt-section-text">
-              Our company can offer you a wide range of business consulting services.
-            </p>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="block_service_img img_1"></div>
           </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
+          <div class="col-lg-6">
+            <div class="block_service_text">
+              <p class="wt-section-subheading wt-text-primary mt-4">Personalization of the audience</p>
+              <p class="wt-section-text wt-text-secondary">
+                The audience experience personalization is not a feature now, it is a primary function of the organization's marketing practice. Our new engine of content recommendation and personalization was designed especially for content-focused organizations and news companies to provide more relevant content to each user of their target audience.
+              </p>
             </div>
-            <h3 class="wt-section-heading mt-4">
-              Data Deploy
-            </h3>
-            <p class="wt-section-text">
-              Our team will successfully plan the deployment of your appliance.
-            </p>
           </div>
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="wt-block-img">
-              <img src="img/account.svg" alt="">
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="block_service_img img_2"></div>
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="block_service_text">
+              <p class="wt-section-subheading wt-text-primary mt-4">E-mail marketing automation</p>
+              <p class="wt-section-text wt-text-secondary">
+                Sometimes users change their behavior, which requires a more intensified approach to behavior management and analysis. This means that marketing automation is a leading power to engage and retain your target audience. Nowadays, the market offers a range of products designed to meet marketers' needs. But UseJoy aims at satisfying the needs of the news media industry with the help of a fully automated content delivery workflow.
+              </p>
             </div>
-            <h3 class="wt-section-heading mt-4">
-              Digital Branding
-            </h3>
-            <p class="wt-section-text">
-              Building brand awareness for micro and small businesses.
-            </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="block_service_img img_3"></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="block_service_text">
+              <p class="wt-section-subheading wt-text-primary mt-4">A foundation of loyal audience</p>
+              <p class="wt-section-text wt-text-secondary">
+                The foundation of any media organization growth is a loyal audience. Subscribers are the interested parties of the target audience. But if you want to turn your subscribers into customers, you should understand that there has to be a high conversion rate from new users to subscribers and that the quality of this database has to be rather high. This is where UseJoy can come in handy.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <div class="block_service_img img_4"></div>
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="block_service_text">
+              <p class="wt-section-subheading wt-text-primary mt-4">Intelligent advertising</p>
+              <p class="wt-section-text wt-text-secondary">
+                Advertising is a key in income growth for more than 95% of media organizations all over the world. Whilst the display advertising is practically unnoticed to the audience and video advertising needs to establish itself, a great number of buying platforms strive to accommodate advertisements immediately, with a supposed 75% of all ad income by 2020. UseJoy supplements this trend with a new way of audience targeting, which is based on a profound understanding of users' personal interests.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallery -->
-    <section id="gallery" class="text-center">
+    <!-- Process -->
+    <section id="process" class="text-center">
       <div class="container">
         <div class="row">
-          <h2 class="wt-section-title wt-text-primary mb-5">
-            Gallery
-          </h2>
-          <div class="col-lg-7">
-            <div class="wt-block-gallery-leftImg">
-              <div class="wt-block-background">
-                <div class="wt-background wt-background-galleryImg-l"></div>
-                <div class="wt-background-galleryOverlay">
-                  <h3 class="wt-section-heading text-white mb-0">Quantum CEO & our partners</h3>
-                </div>
-              </div>
-            </div>
+          <div class="wt-block-background">
+            <div class="wt-background background_processImg"></div>
           </div>
-          <div class="col-lg-5">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="wt-block-gallery-rightImg">
-                  <div class="wt-block-background">
-                    <div class="wt-background wt-background-galleryImg-r"></div>
-                    <div class="wt-background-galleryOverlay">
-                      <h3 class="wt-section-heading text-white mb-0">Digital Marketing workshop lecturer</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <h2 class="wt-section-title wt-text-primary mb-5">
+            Our process
+          </h2>
+          <div class="col-md-4">
+            <div class="block_process_number bg_lighten mb-4">
+              <div class="block_process_dig">1</div>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="wt-block-gallery-rightImg">
-                  <div class="wt-block-background">
-                    <div class="wt-background wt-background-galleryImg-r2"></div>
-                    <div class="wt-background-galleryOverlay">
-                      <h3 class="wt-section-heading text-white mb-0">Quantum Company at WebSummit</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <p class="wt-section-subheading wt-text-primary mb-2">Choose a service</p>
+            <p class="wt-section-text wt-text-secondary">
+              Explore what we can offer and choose the service which meets your objectives.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="block_process_number bg_light mb-4">
+              <div class="block_process_dig">2</div>
             </div>
+            <p class="wt-section-subheading wt-text-primary mb-2">Make a payment</p>
+            <p class="wt-section-text wt-text-secondary">
+              We guarantee the security of all payments. Choose the most suitable payment method.
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <div class="block_process_number bg_dark mb-4">
+              <div class="block_process_dig">3</div>
+            </div>
+            <p class="wt-section-subheading wt-text-primary mb-2">Enjoy the result</p>
+            <p class="wt-section-text wt-text-secondary">
+              Enjoy the cutting edge solution which will lead you to better results.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Helper -->
-    <section id="helper" style="background: #c5d5ee;">
+    <section id="helper">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 text-center text-lg-left mb-4 mb-lg-0">
-            <h2 class="wt-section-title wt-text-primary">
-              Want to increase profits?
-            </h2>
-            <p class="wt-section-subheading font-weight-normal wt-text-primary">Complete the form below and receive a full analysis of your business within 2 days!</p>
+        <div class="row text-center">
+          <div class="wt-block-background">
+            <div class="wt-background background_helperImg"></div>
+            <div class="wt-background background_helperOverlay"></div>
           </div>
-          <div class="col-lg-4">
-            <form class="wt-form-rounded">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
-              </div>
-              <div class="form-group">
-                <input type="tel" class="form-control" placeholder="Phone number">
-              </div>
-              <button type="submit" class="btn btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
-            </form>
+          <h2 class="wt-section-title text-white">Try a free UseJoy demo!</h2>
+          <p class="wt-section-subtitle wt-text-neon mb-5">
+            View a demo version and see with your own eyes what to expect from our product.
+          </p>
+          <div class="w-100">
+            <a href="#" class="btn btn-white wt-btn-size-md wt-btn-rounded mb-3">Request a quote</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="wt-text-primary">
+    <!-- Testimonials -->
+    <section id="testimonials" class="text-center wt-text-primary">
       <div class="container">
-        <h2 class="wt-section-title text-center mb-5">Contacts</h2>
         <div class="row">
-          <div class="col-lg-9 mb-3">
-            <img src="img/ver6.JPG" class="w-100" alt="">
-          </div>
-          <div class="col-lg-3">
-            <h3 class="wt-section-heading text-center font-weight-normal mb-4">
-              <a href="#">Company Logo</a>
-            </h3>
-            <h3 class="wt-section-heading">Address</h3>
-            <p class="wt-section-text">Head office in London - 36 Regent St.</p>
-            <h3 class="wt-section-heading">Phone</h3>
-            <p class="wt-section-text"><a href="#">+1 (234) 567 8900</a></p>
-            <h3 class="wt-section-heading">E-mail</h3>
-            <p class="wt-section-text"><a href="#">mysite@weblium.com</a></p>
-            <div class="wt-block-follow">
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-              </ul>
+          <h2 class="wt-section-title mb-5">
+            Testimonials
+          </h2>
+          <div class="col-lg-4 pb-3">
+            <div class="block_testimonials">
+              <div class="wt-block-background">
+                <div class="wt-background background_testimonialImg"></div>
+                <div class="wt-background background_testimonialOverlay1"></div>
+              </div>
+              <p class="wt-section-text text-white">
+                "Many thanks to UseJoy and highly professional and enthusiastic team! They offer a great product and ensure exceptional customer service to help use their product in fullest. They always explain everything in details to meet clients' needs."
+              </p>
+              <p class="wt-section-subheading text-white">Katherine Stone</p>
+              <p class="wt-section-small-text wt-text-neon">Customer Engagement Lead at ABT Group</p>
             </div>
+          </div>
+
+          <div class="col-lg-4 pb-3">
+            <div class="block_testimonials">
+              <div class="wt-block-background">
+                <div class="wt-background background_testimonialImg"></div>
+                <div class="wt-background background_testimonialOverlay2"></div>
+              </div>
+              <p class="wt-section-text text-white">
+                "The main aim in the re-branding strategy of our newspaper was reading experience personalization. We used UseJoy's product and the result was just fantastic. The traffic of the site has been increased by 300%."
+              </p>
+              <p class="wt-section-subheading text-white">Anna Pool</p>
+              <p class="wt-section-small-text wt-text-neon">Digital Brands Manager at Nation Media Group</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 pb-3">
+            <div class="block_testimonials">
+              <div class="wt-block-background">
+                <div class="wt-background background_testimonialImg"></div>
+                <div class="wt-background background_testimonialOverlay3"></div>
+              </div>
+              <p class="wt-section-text text-white">
+                "I just want to note that it was a great pleasure to work with UseJoy. The staff is really professional. They can deal with any issue a customer may come across. Highly recommend UseJoy!"
+              </p>
+              <p class="wt-section-subheading text-white">Elizabeth Smith</p>
+              <p class="wt-section-small-text wt-text-neon">Paid Content Development Specialist at The Press Group</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- callToAction -->
+    <section id="callToAction">
+      <div class="container">
+        <div class="row">
+          <div class="wt-block-background">
+            <div class="wt-background background_callToActionImg"></div>
+            <div class="wt-background background_callToActionOverlay"></div>
+          </div>
+          <div class="block_formCenter wt-text-primary">
+            <h2 class="wt-section-title text-center">
+              Want to increase profits?
+            </h2>
+            <p class="wt-section-subheading text-center font-weight-normal">
+              Complete the form below and receive a full analysis of your business within 2 days!
+            </p>
+            <form class="wt-form-rounded">
+              <div class="form-group">
+                <input type="text" class="form-control" id="call2InputName" placeholder="Name *">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="call2InputPhoneNumber" placeholder="Phone number *">
+              </div>
+              <button type="submit" class="btn btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
+            </form>
           </div>
         </div>
       </div>
@@ -290,70 +328,68 @@
     <!-- Footer -->
     <section id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <p class="wt-section-subheading text-white">
-              Quantum Company
-            </p>
+        <div class="row text-white text-center text-md-left">
+          <div class="col-lg-3">
+            <a class="wt-section-subheading">
+              <img src="img/logo.png" width="80" alt="">
+            </a>
             <p class="wt-section-text">
-              Our company will go the extra mile to analyze the particular project in detail, and offer a business solution that will meet your requirements.
+              Smart and fast product to help you meet your clients' needs.
             </p>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center text-md-left mb-3 mb-md-0">
-            <ul class="row nav">
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">About</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Testimonials</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Projects</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Blog</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Services</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Resources</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Development</a>
-              </li>
-              <li class="col-md-6 nav-item">
-                <a href="#" class="nav-link">Contact us</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-lg-2 text-center text-md-left mb-3 mb-md-0">
-            <div class="wt-block-follow">
-              <p class="wt-section-text">
-                Follow us:
-              </p>
-              <ul class="list-inline mb-0 align-text-bottom">
+            <div class="wt-block-follow wt-rounded-transparent">
+              <ul class="list-inline mt-4">
                 <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
                 <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
               </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <p class="wt-section-text">
-              Subscribe to get the latest news from us
-            </p>
-            <form class="wt-form-rounded">
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email *">
-              </div>
-              <button type="submit" class="btn btn-primary wt-btn-size-md wt-btn-rounded w-100">Request a quote</button>
-            </form>
+          <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="wt-section-subheading">Product</p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Solutions</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Features</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="wt-section-subheading">Company</p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-3 mb-md-0">
+            <ul class="row nav flex-column">
+              <li class="nav-item">
+                <p class="wt-section-subheading">Legal</p>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Terms & Conditions</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Privacy policy</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="row mt-3 wt-border-top">
+        <div class="row mt-3 border_top text-white no-gutters">
           <div class="col-md-6">
-            <p class="wt-section-small-text">Created by Weblium ©</p>
+            <p class="wt-section-small-text">Created by WT Agency ©</p>
           </div>
           <div class="col-md-6 text-right">
             <p class="wt-section-small-text">All rights Reserved</p>

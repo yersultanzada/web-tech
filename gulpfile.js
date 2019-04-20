@@ -18,11 +18,11 @@ var banner = ['/*!\n',
 ].join('');
 
 // Copy third party libraries from /node_modules into /vendor
-gulp.task('vendor', function() {
+/*gulp.task('vendor', function() {
 
   // Bootstrap
   gulp.src([
-      './node_modules/bootstrap/dist/**/*',
+      './node_modules/bootstrap/dist/!**!/!*',
       '!./node_modules/bootstrap/dist/css/bootstrap-grid*',
       '!./node_modules/bootstrap/dist/css/bootstrap-reboot*'
     ])
@@ -30,24 +30,24 @@ gulp.task('vendor', function() {
 
   // Font Awesome
   gulp.src([
-      './node_modules/@fortawesome/**/*',
+      './node_modules/@fortawesome/!**!/!*',
     ])
     .pipe(gulp.dest('./vendor'))
 
   // jQuery
   gulp.src([
-      './node_modules/jquery/dist/*',
+      './node_modules/jquery/dist/!*',
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'))
 
   // jQuery Easing
   gulp.src([
-      './node_modules/jquery.easing/*.js'
+      './node_modules/jquery.easing/!*.js'
     ])
     .pipe(gulp.dest('./vendor/jquery-easing'))
 
-});
+});*/
 
 // Compile SCSS
 gulp.task('css:compile', function() {

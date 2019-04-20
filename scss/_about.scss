@@ -1,23 +1,83 @@
-// Styling for the about1 section
-section#about1 {
-  .wt-graft-img {
-    width: 100%;
-    height: 300px;
-    background-color: #cccccc;
-    img {
-      margin-top: 80px;
+// Styling for the about section
+section#about {
+  .block_devices {
+    max-width: 320px;
+    min-height: 235px;
+    margin-left: auto;
+    margin-right: auto;
+    .block_device_iPad {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 260px;
+      height: 187px;
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      .block_iPad_pic {
+        position: absolute;
+        top: 9px;
+        left: 18px;
+        width: 224px;
+        height: 168px;
+        background: url(../img/about/about-ipad-pic.png) no-repeat 50% 50% / cover;
+        -webkit-box-shadow: 20px 10px 80px 10px rgba(0,0,0,.2);
+        box-shadow: 20px 10px 80px 10px rgba(0,0,0,.2);
+      }
+    }
+    .block_device_iPhone {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 93px;
+      height: 187px;
+      z-index: 1;
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      .block_iPhone_pic {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 81px;
+        height: 175px;
+        background: url(../img/about/about-iphone-pic.jpg) no-repeat 50% 50% / cover;
+        -webkit-box-shadow: 10px 10px 60px 10px rgba(0,0,0,.2);
+        box-shadow: 10px 10px 60px 10px rgba(0,0,0,.2);
+      }
     }
   }
 }
-// Styling for the about2 section
-section#about2 {
-  .wt-graft-img {
-    width: 100%;
-    height: 280px;
-    background-color: #cccccc;
-    text-align: center;
-    img {
-      margin-top: 80px;
+@media (min-width: 992px) {
+  section#about .block_devices {
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) {
+  section#about .block_devices {
+    max-width: 650px;
+    min-height: 458px;
+    .block_device_iPad {
+      width: 569px;
+      height: 409px;
+      .block_iPad_pic {
+        top: 21px;
+        left: 40px;
+        width: 489px;
+        height: 367px;
+      }
+    }
+    .block_device_iPhone {
+      width: 180px;
+      height: 361px;
+      .block_iPhone_pic {
+        top: 10px;
+        left: 11px;
+        width: 158px;
+        height: 342px;
+      }
     }
   }
 }

@@ -1,0 +1,41 @@
+// Styling for the process section
+section#process {
+  position: relative;
+  .background_processImg {
+    background: url(../img/process-bg.jpg) no-repeat 50% 50% / cover;
+  }
+  .block_process_number {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    color: #fff;
+    border-radius: 15px;
+    transform: rotate(45deg) scale(0.75);
+    padding: 9px;
+    &.bg_lighten {
+      background-color: #0B7993;
+    }
+    &.bg_light {
+      background-color: #5471b4;
+    }
+    &.bg_dark {
+      background-color: #3a3c67;
+    }
+    .block_process_dig {
+      font-size: 55px;
+      line-height: 55px;
+      transform: rotate(-45deg) scale(0.75);
+    }
+  }
+}
+@media (min-width: 768px) {
+  section#process .block_process_number {
+    width: 100px;
+    height: 100px;
+    padding: 13px;
+    .block_process_dig {
+      font-size: 75px;
+      line-height: 75px;
+    }
+  }
+}
