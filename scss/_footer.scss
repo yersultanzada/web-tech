@@ -11,6 +11,15 @@ section#footer {
     color: #fff;
     padding: .2rem 0;
   }
+  .wt-rounded-transparent a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: $primary;
+    }
+  }
   .border_top {
     border-top: 1px solid #fff;
     margin-left: 0;

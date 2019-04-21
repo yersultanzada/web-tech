@@ -4,6 +4,9 @@ section#masthead {
   .background_headerImg {
     background: url(../img/main-bg.jpg) no-repeat 70.63% 47.97% / cover , #3c506f;
   }
+  &.inner_pages .background_headerImg {
+    background: #2e2f53 !important;
+  }
   .block_intro {
     padding-top: 50px;
     padding-bottom: 50px;

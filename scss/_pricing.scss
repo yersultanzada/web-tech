@@ -1,0 +1,26 @@
+// Styling for the pricing section
+section#pricing {
+  .block_pricingCard {
+    color: #fff;
+    border-radius: 20px;
+    padding: 50px 20px 60px;
+    margin-top: 20px;
+    &.pack_one {
+      background: rgb(36, 31, 102);
+    }
+    &.pack_two {
+      background: rgb(58, 60, 103);
+    }
+    &.pack_three {
+      background: rgb(84, 113, 180);
+    }
+    &.pack_four {
+      background: rgb(126, 215, 218);
+    }
+  }
+}
+@media (min-width: 768px) {
+  section#pricing .block_pricingCard {
+    min-height: 439px;
+  }
+}

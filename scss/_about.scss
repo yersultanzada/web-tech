@@ -49,6 +49,11 @@ section#about {
       }
     }
   }
+  .block_aboutUs_img {
+    background: url(../img/about/about-us.jpg) no-repeat 50% 50%/cover;
+    padding: 32%;
+    border-radius: 10px;
+  }
 }
 @media (min-width: 992px) {
   section#about .block_devices {
@@ -78,6 +83,59 @@ section#about {
         width: 158px;
         height: 342px;
       }
+    }
+  }
+}
+
+// Styling for the mission section
+section#mission {
+  position: relative;
+  .background_missionImg {
+    background: url(../img/about/mission-bg.jpg) no-repeat 56.56% 50.54% / cover;
+  }
+  .background_missionOverlay {
+    background: rgba(36, 31, 102, 0.56);
+  }
+  .block_mission_text {
+    background: rgba(84, 113, 180, 0.63);
+    padding: 45px 40px 70px 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+}
+@media (min-width: 992px) {
+  section#mission .block_mission_text {
+    margin-left: 110px !important;
+  }
+}
+@media (min-width: 768px) {
+  section#mission .block_mission_text {
+    width: 570px;
+    margin-left: 25px;
+  }
+}
+
+// Styling for the team section
+section#team {
+  .block_team_img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    -webkit-box-shadow: 11px 11px 38px 0 rgba(6,42,57,.22);
+    box-shadow: 11px 11px 38px 0 rgba(6,42,57,.22);
+    &.team_img1 {
+      background: url(../img/team/team1.jpg) no-repeat 50% 50% / cover;
+    }
+    &.team_img2 {
+      background: url(../img/team/team2.jpg) no-repeat 50% 50% / cover;
+    }
+    &.team_img3 {
+      background: url(../img/team/team3.jpg) no-repeat 50% 50% / cover;
+    }
+    &.team_img4 {
+      background: url(../img/team/team4.jpeg) no-repeat 50% 50% / cover;
     }
   }
 }

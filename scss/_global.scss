@@ -52,7 +52,7 @@ a {
         width: 30px;
         height: 30px;
         line-height: 30px;
-        color: #fff;
+        color: white;
         &:hover {
           background-color: lighten($primary, 20%);
         }
@@ -62,13 +62,14 @@ a {
   &.wt-rounded-transparent a {
     background-color: transparent;
     border-radius: 50%;
-    border: 1px solid #fff;
+    border: 1px solid $primary;
     width: 35px;
     height: 35px;
     line-height: 33px;
+    color: $primary;
     &:hover {
-      background-color: white;
-      color: $primary;
+      background-color: $primary;
+      color: white;
       transition: background-color 0.3s ease;
     }
   }
@@ -85,7 +86,7 @@ h6 {
 }
 
 section {
-  padding: 45px 0;
+  padding: 60px 0;
   h1.wt-section-heroTitle {
     font-size: 48px;
     line-height: 1.22;

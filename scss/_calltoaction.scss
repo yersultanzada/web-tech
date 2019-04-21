@@ -42,3 +42,27 @@ section#callToAction {
     padding: 60px 80px 70px;
   }
 }
+
+// Styling for the about-callToAction section
+section#about-callToAction {
+  position: relative;
+  .background_aboutCallToActionImg {
+    background: url(../img/helper-bg.jpg) no-repeat 30% 28.11% / cover;
+  }
+  .background_aboutCallToActionOverlay {
+    background: rgba(36, 31, 102, 0.56);
+  }
+  form.wt-form-rounded {
+    .form-group {
+      margin-bottom: 1.5em;
+      input {
+        background-color: rgba(103, 103, 103, 0.2);
+        color: #fff;
+        border: none;
+        padding: 13px 30px;
+        height: inherit;
+        font-size: 12px;
+      }
+    }
+  }
+}
