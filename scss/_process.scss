@@ -4,6 +4,12 @@ section#process {
   .background_processImg {
     background: url(../img/process-bg.jpg) no-repeat 50% 50% / cover;
   }
+  .block_process_border {
+    border: 1px solid #cccccc;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
   .block_process_number {
     width: 70px;
     height: 70px;
@@ -21,6 +27,9 @@ section#process {
     &.bg_dark {
       background-color: #3a3c67;
     }
+    &.bg_darken {
+      background-color: #241F66;
+    }
     .block_process_dig {
       font-size: 55px;
       line-height: 55px;
@@ -29,13 +38,19 @@ section#process {
   }
 }
 @media (min-width: 768px) {
-  section#process .block_process_number {
-    width: 100px;
-    height: 100px;
-    padding: 13px;
-    .block_process_dig {
-      font-size: 75px;
-      line-height: 75px;
+  section#process {
+    .block_process_border {
+      min-height: 362px;
+      padding: 20px;
+    }
+    .block_process_number {
+      width: 100px;
+      height: 100px;
+      padding: 13px;
+      .block_process_dig {
+        font-size: 75px;
+        line-height: 75px;
+      }
     }
   }
 }

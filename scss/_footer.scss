@@ -2,6 +2,18 @@
 section#footer {
   background-color: #2E2F53;
   padding-bottom: 30px;
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    @include logo-font;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken(white, 10%);
+    }
+  }
   p.wt-section-subheading {
     margin-bottom: 5px;
     font-weight: bold;

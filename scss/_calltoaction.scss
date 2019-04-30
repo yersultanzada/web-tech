@@ -38,8 +38,13 @@ section#callToAction {
 }
 
 @media (min-width: 992px) {
-  section#callToAction .block_formCenter {
-    padding: 60px 80px 70px;
+  section#callToAction {
+    .background_callToActionImg {
+      background-attachment: fixed;
+    }
+    .block_formCenter {
+      padding: 60px 80px 70px;
+    }
   }
 }
 

@@ -6,7 +6,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 p {
@@ -94,7 +94,7 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 section {
@@ -124,7 +124,7 @@ section h2.wt-section-title {
 }
 
 section p.wt-section-subtitle {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
   width: 100%;
@@ -187,7 +187,7 @@ form.wt-form-rounded .btn {
 .btn {
   font-size: 14px;
   line-height: 1.2;
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .wt-btn-size-sm {
@@ -307,6 +307,7 @@ img::-moz-selection {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+  font-family: 'Permanent Marker', cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -315,7 +316,7 @@ img::-moz-selection {
 
 #mainNav .burger_menu {
   float: right;
-  padding-top: 25px;
+  padding-top: 10px;
   color: white;
 }
 
@@ -424,6 +425,9 @@ section#masthead .block_intro {
     margin-left: auto;
     margin-right: 0;
   }
+  section#masthead.main_page {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 767px) {
@@ -440,7 +444,7 @@ section#services .block_service_img {
 }
 
 section#services .block_service_img.img_1 {
-  background: url(../img/services/service1.jpg) no-repeat 50% 50%/cover;
+  background: url(../img/services/service3.jpg) no-repeat 50% 50%/cover;
 }
 
 section#services .block_service_img.img_2 {
@@ -448,11 +452,11 @@ section#services .block_service_img.img_2 {
 }
 
 section#services .block_service_img.img_3 {
-  background: url(../img/services/service3.jpg) no-repeat 50% 50%/cover;
+  background: url(../img/services/service6.jpg) no-repeat 50% 50%/cover;
 }
 
 section#services .block_service_img.img_4 {
-  background: url(../img/services/service4.jpg) no-repeat 50% 50%/cover;
+  background: url(../img/services/service5.jpg) no-repeat 50% 50%/cover;
 }
 
 section#services .block_service_text {
@@ -513,6 +517,9 @@ section#callToAction .block_formCenter form input {
 }
 
 @media (min-width: 992px) {
+  section#callToAction .background_callToActionImg {
+    background-attachment: fixed;
+  }
   section#callToAction .block_formCenter {
     padding: 60px 80px 70px;
   }
@@ -551,6 +558,13 @@ section#process .background_processImg {
   background: url(../img/process-bg.jpg) no-repeat 50% 50%/cover;
 }
 
+section#process .block_process_border {
+  border: 1px solid #cccccc;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
 section#process .block_process_number {
   width: 70px;
   height: 70px;
@@ -574,6 +588,10 @@ section#process .block_process_number.bg_dark {
   background-color: #3a3c67;
 }
 
+section#process .block_process_number.bg_darken {
+  background-color: #241F66;
+}
+
 section#process .block_process_number .block_process_dig {
   font-size: 55px;
   line-height: 55px;
@@ -582,6 +600,10 @@ section#process .block_process_number .block_process_dig {
 }
 
 @media (min-width: 768px) {
+  section#process .block_process_border {
+    min-height: 362px;
+    padding: 20px;
+  }
   section#process .block_process_number {
     width: 100px;
     height: 100px;
@@ -802,6 +824,17 @@ section#pricing .block_pricingCard.pack_four {
 section#footer {
   background-color: #2E2F53;
   padding-bottom: 30px;
+}
+
+section#footer .navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+section#footer .navbar-brand.active, section#footer .navbar-brand:active, section#footer .navbar-brand:focus, section#footer .navbar-brand:hover {
+  color: #e6e6e6;
 }
 
 section#footer p.wt-section-subheading {

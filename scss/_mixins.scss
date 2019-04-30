@@ -15,5 +15,8 @@
   font-family: 'Merriweather', serif;
 }
 @mixin main-font {
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+@mixin logo-font {
+  font-family: 'Permanent Marker', cursive;
 }
