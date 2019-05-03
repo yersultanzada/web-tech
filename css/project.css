@@ -238,6 +238,40 @@ form.wt-form-rounded .btn {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.btn-black {
+  background-color: black;
+  border-color: black;
+  color: white !important;
+}
+
+.btn-black:active, .btn-black:focus, .btn-black:hover {
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+}
+
+.btn-black:active, .btn-black:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.btn-yellow {
+  background-color: #e9e765;
+  border-color: #e9e765;
+  color: black !important;
+}
+
+.btn-yellow:active, .btn-yellow:focus, .btn-yellow:hover {
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+}
+
+.btn-yellow:active, .btn-yellow:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
 .wt-btn-rounded {
   border-radius: 25px;
 }
@@ -272,18 +306,6 @@ img::-moz-selection {
   background: transparent;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 740px;
-  }
-}
-
 @media (max-width: 767px) {
   section {
     padding: 30px 0;
@@ -296,6 +318,18 @@ img::-moz-selection {
   }
   section p.wt-section-subheading {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 
@@ -415,6 +449,15 @@ section#masthead .block_intro {
   padding-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  section#masthead .block_intro {
+    padding-top: 0;
+  }
+  section#masthead .wt-section-heroTitle {
+    font-size: 40px;
+  }
+}
+
 @media (min-width: 992px) {
   section#masthead .block_intro {
     padding-top: 50px;
@@ -430,13 +473,157 @@ section#masthead .block_intro {
   }
 }
 
-@media (max-width: 767px) {
-  section#masthead .block_intro {
-    padding-top: 0;
+section#about .block_devices {
+  max-width: 320px;
+  min-height: 235px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section#about .block_devices .block_device_iPad {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 187px;
+}
+
+section#about .block_devices .block_device_iPad img {
+  position: relative;
+  z-index: 1;
+}
+
+section#about .block_devices .block_device_iPad .block_iPad_pic {
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  width: 224px;
+  height: 168px;
+  background: url(../img/about/about-ipad-pic.png) no-repeat 50% 50%/cover;
+  -webkit-box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#about .block_devices .block_device_iPhone {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 93px;
+  height: 187px;
+  z-index: 1;
+}
+
+section#about .block_devices .block_device_iPhone img {
+  position: relative;
+  z-index: 1;
+}
+
+section#about .block_devices .block_device_iPhone .block_iPhone_pic {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 81px;
+  height: 175px;
+  background: url(../img/about/about-iphone-pic.jpg) no-repeat 50% 50%/cover;
+  -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
+}
+
+section#about .block_aboutUs_img {
+  background: url(../img/about/about-us.jpg) no-repeat 50% 50%/cover;
+  padding: 32%;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  section#about .block_devices {
+    max-width: 650px;
+    min-height: 458px;
   }
-  section#masthead .wt-section-heroTitle {
-    font-size: 40px;
+  section#about .block_devices .block_device_iPad {
+    width: 569px;
+    height: 409px;
   }
+  section#about .block_devices .block_device_iPad .block_iPad_pic {
+    top: 21px;
+    left: 40px;
+    width: 489px;
+    height: 367px;
+  }
+  section#about .block_devices .block_device_iPhone {
+    width: 180px;
+    height: 361px;
+  }
+  section#about .block_devices .block_device_iPhone .block_iPhone_pic {
+    top: 10px;
+    left: 11px;
+    width: 158px;
+    height: 342px;
+  }
+}
+
+@media (min-width: 992px) {
+  section#about .block_devices {
+    margin-right: 0;
+  }
+}
+
+section#mission {
+  position: relative;
+}
+
+section#mission .background_missionImg {
+  background: url(../img/about/mission-bg.jpg) no-repeat 56.56% 50.54%/cover;
+}
+
+section#mission .background_missionOverlay {
+  background: rgba(36, 31, 102, 0.56);
+}
+
+section#mission .block_mission_text {
+  background: rgba(84, 113, 180, 0.63);
+  padding: 45px 40px 70px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  section#mission .block_mission_text {
+    width: 570px;
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  section#mission .block_mission_text {
+    margin-left: 110px !important;
+  }
+}
+
+section#team .block_team_img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  -webkit-box-shadow: 11px 11px 38px 0 rgba(6, 42, 57, 0.22);
+  box-shadow: 11px 11px 38px 0 rgba(6, 42, 57, 0.22);
+}
+
+section#team .block_team_img.team_img1 {
+  background: url(../img/team/team1.jpg) no-repeat 50% 50%/cover;
+}
+
+section#team .block_team_img.team_img2 {
+  background: url(../img/team/team2.jpg) no-repeat 50% 50%/cover;
+}
+
+section#team .block_team_img.team_img3 {
+  background: url(../img/team/team3.jpg) no-repeat 50% 50%/cover;
+}
+
+section#team .block_team_img.team_img4 {
+  background: url(../img/team/team4.jpeg) no-repeat 50% 50%/cover;
 }
 
 section#services .block_service_img {
@@ -463,15 +650,246 @@ section#services .block_service_text {
   padding: 45px 80px;
 }
 
+@media (max-width: 767px) {
+  section#services .block_service_text {
+    padding: 20px 30px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   section#services .block_service_text {
     padding: 10px;
   }
 }
 
-@media (max-width: 767px) {
-  section#services .block_service_text {
-    padding: 20px 30px;
+section#process {
+  position: relative;
+}
+
+section#process .background_processImg {
+  background: url(../img/process-bg.jpg) no-repeat 50% 50%/cover;
+}
+
+section#process .block_process_border {
+  border: 1px solid #cccccc;
+  padding: 30px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+section#process .block_process_number {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  color: #fff;
+  border-radius: 15px;
+  -webkit-transform: rotate(45deg) scale(0.75);
+  transform: rotate(45deg) scale(0.75);
+  padding: 9px;
+}
+
+section#process .block_process_number.bg_lighten {
+  background-color: #0B7993;
+}
+
+section#process .block_process_number.bg_light {
+  background-color: #5471b4;
+}
+
+section#process .block_process_number.bg_dark {
+  background-color: #3a3c67;
+}
+
+section#process .block_process_number.bg_darken {
+  background-color: #241F66;
+}
+
+section#process .block_process_number .block_process_dig {
+  font-size: 55px;
+  line-height: 55px;
+  -webkit-transform: rotate(-45deg) scale(0.75);
+  transform: rotate(-45deg) scale(0.75);
+}
+
+@media (min-width: 768px) {
+  section#process .block_process_border {
+    min-height: 362px;
+    padding: 20px;
+  }
+  section#process .block_process_number {
+    width: 100px;
+    height: 100px;
+    padding: 13px;
+  }
+  section#process .block_process_number .block_process_dig {
+    font-size: 75px;
+    line-height: 75px;
+  }
+}
+
+section#ourProjects {
+  position: relative;
+}
+
+section#ourProjects .background_projectsImg {
+  background: url(../img/price-more-bg.png) no-repeat left top/contain, white;
+}
+
+section#ourProjects .background_projectsOverlay {
+  background: rgba(48, 34, 81, 0.9);
+}
+
+section#ourProjects .col-12 {
+  margin-bottom: 30px;
+}
+
+section#ourProjects .block_projects_card .block_card_img {
+  padding: 35%;
+}
+
+section#ourProjects .block_projects_card .block_card_img.img_1 {
+  padding: 41%;
+  background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+}
+
+section#ourProjects .block_projects_card .block_card_img.img_2 {
+  background: url(../img/portfolio/proj2.png) no-repeat 50% 50%/cover;
+}
+
+section#ourProjects .block_projects_card .block_card_img.img_3 {
+  background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+}
+
+section#ourProjects .block_projects_card .block_card_body {
+  background-color: #fff;
+  padding: 15px;
+}
+
+@media (min-width: 1200px) {
+  section#ourProjects .block_projects_card .img_1 {
+    min-height: 640px;
+  }
+}
+
+section#pricing .block_pricingCard {
+  color: #fff;
+  border-radius: 20px;
+  padding: 50px 20px 60px;
+  margin-top: 20px;
+}
+
+section#pricing .block_pricingCard .wt-section-subheading {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+section#pricing .block_pricingCard img {
+  width: 85px;
+}
+
+section#pricing .block_pricingCard.pack_one {
+  background: #241f66;
+}
+
+section#pricing .block_pricingCard.pack_two {
+  background: #3a3c67;
+}
+
+section#pricing-more-light, section#pricing-more-dark {
+  position: relative;
+}
+
+section#pricing-more-light .background_pricingMoreImg, section#pricing-more-dark .background_pricingMoreImg {
+  background: url(../img/price-more-bg.png) no-repeat left top/contain, white;
+}
+
+section#pricing-more-light .background_pricingMoreOverlay, section#pricing-more-dark .background_pricingMoreOverlay {
+  background: rgba(228, 226, 101, 0.8);
+}
+
+section#pricing-more-light .background_pricingMoreDarkOverlay, section#pricing-more-dark .background_pricingMoreDarkOverlay {
+  background: rgba(48, 34, 81, 0.9);
+}
+
+section#pricing-more-light .block_pricingMoreCard, section#pricing-more-dark .block_pricingMoreCard {
+  color: #fff;
+  padding: 50px 20px 60px;
+}
+
+section#pricing-more-light .block_pricingMoreCard.pack_light, section#pricing-more-dark .block_pricingMoreCard.pack_light {
+  background-color: #302251;
+}
+
+section#pricing-more-light .block_pricingMoreCard.pack_dark, section#pricing-more-dark .block_pricingMoreCard.pack_dark {
+  background-color: #E4E265;
+  color: #241f66;
+}
+
+section#pricing-more-light .table thead th, section#pricing-more-dark .table thead th {
+  font-size: 22px;
+  border-bottom: none;
+  border-top: none;
+}
+
+section#pricing-more-light .table td, section#pricing-more-dark .table td {
+  font-size: 18px;
+  border-top: 1px solid #000;
+}
+
+section#pricing-more-light .table tr.price td, section#pricing-more-dark .table tr.price td {
+  padding-top: 25px;
+}
+
+section#pricing-more-light .table tr.price td .wt-section-heroTitle, section#pricing-more-dark .table tr.price td .wt-section-heroTitle {
+  font-size: 40px;
+}
+
+section#pricing-more-light .table tr.price td .btn, section#pricing-more-dark .table tr.price td .btn {
+  width: 160px;
+}
+
+section#addServices {
+  position: relative;
+}
+
+section#addServices .background_addImg {
+  background: url(../img/add-services-bg.png) no-repeat 41.25% 44.78%/cover;
+}
+
+section#addServices .background_addOverlay {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+section#addServices .block_add_service {
+  font-family: 'Anonymous Pro', monospace;
+  background-color: #fff;
+  padding: 16px;
+}
+
+section#addServices .block_add_service img {
+  width: 64px;
+}
+
+section#testimonials .block_testimonials {
+  position: relative;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+section#testimonials .block_testimonials .background_testimonialImg {
+  background: url(../img/testimonials-bg.jpg) no-repeat 50% 50%/cover, #3c506f;
+}
+
+section#testimonials .block_testimonials .background_testimonialOverlay2 {
+  background: rgba(84, 113, 180, 0.42);
+}
+
+section#testimonials .block_testimonials .background_testimonialOverlay3 {
+  background: rgba(74, 195, 199, 0.29);
+}
+
+@media (min-width: 992px) {
+  section#testimonials .block_testimonials {
+    min-height: 351px;
   }
 }
 
@@ -548,277 +966,6 @@ section#about-callToAction form.wt-form-rounded .form-group input {
   padding: 13px 30px;
   height: inherit;
   font-size: 12px;
-}
-
-section#process {
-  position: relative;
-}
-
-section#process .background_processImg {
-  background: url(../img/process-bg.jpg) no-repeat 50% 50%/cover;
-}
-
-section#process .block_process_border {
-  border: 1px solid #cccccc;
-  padding: 30px 20px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-}
-
-section#process .block_process_number {
-  width: 70px;
-  height: 70px;
-  margin: auto;
-  color: #fff;
-  border-radius: 15px;
-  -webkit-transform: rotate(45deg) scale(0.75);
-  transform: rotate(45deg) scale(0.75);
-  padding: 9px;
-}
-
-section#process .block_process_number.bg_lighten {
-  background-color: #0B7993;
-}
-
-section#process .block_process_number.bg_light {
-  background-color: #5471b4;
-}
-
-section#process .block_process_number.bg_dark {
-  background-color: #3a3c67;
-}
-
-section#process .block_process_number.bg_darken {
-  background-color: #241F66;
-}
-
-section#process .block_process_number .block_process_dig {
-  font-size: 55px;
-  line-height: 55px;
-  -webkit-transform: rotate(-45deg) scale(0.75);
-  transform: rotate(-45deg) scale(0.75);
-}
-
-@media (min-width: 768px) {
-  section#process .block_process_border {
-    min-height: 362px;
-    padding: 20px;
-  }
-  section#process .block_process_number {
-    width: 100px;
-    height: 100px;
-    padding: 13px;
-  }
-  section#process .block_process_number .block_process_dig {
-    font-size: 75px;
-    line-height: 75px;
-  }
-}
-
-section#about .block_devices {
-  max-width: 320px;
-  min-height: 235px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section#about .block_devices .block_device_iPad {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 260px;
-  height: 187px;
-}
-
-section#about .block_devices .block_device_iPad img {
-  position: relative;
-  z-index: 1;
-}
-
-section#about .block_devices .block_device_iPad .block_iPad_pic {
-  position: absolute;
-  top: 9px;
-  left: 18px;
-  width: 224px;
-  height: 168px;
-  background: url(../img/about/about-ipad-pic.png) no-repeat 50% 50%/cover;
-  -webkit-box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
-}
-
-section#about .block_devices .block_device_iPhone {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 93px;
-  height: 187px;
-  z-index: 1;
-}
-
-section#about .block_devices .block_device_iPhone img {
-  position: relative;
-  z-index: 1;
-}
-
-section#about .block_devices .block_device_iPhone .block_iPhone_pic {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 81px;
-  height: 175px;
-  background: url(../img/about/about-iphone-pic.jpg) no-repeat 50% 50%/cover;
-  -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
-}
-
-section#about .block_aboutUs_img {
-  background: url(../img/about/about-us.jpg) no-repeat 50% 50%/cover;
-  padding: 32%;
-  border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-  section#about .block_devices {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  section#about .block_devices {
-    max-width: 650px;
-    min-height: 458px;
-  }
-  section#about .block_devices .block_device_iPad {
-    width: 569px;
-    height: 409px;
-  }
-  section#about .block_devices .block_device_iPad .block_iPad_pic {
-    top: 21px;
-    left: 40px;
-    width: 489px;
-    height: 367px;
-  }
-  section#about .block_devices .block_device_iPhone {
-    width: 180px;
-    height: 361px;
-  }
-  section#about .block_devices .block_device_iPhone .block_iPhone_pic {
-    top: 10px;
-    left: 11px;
-    width: 158px;
-    height: 342px;
-  }
-}
-
-section#mission {
-  position: relative;
-}
-
-section#mission .background_missionImg {
-  background: url(../img/about/mission-bg.jpg) no-repeat 56.56% 50.54%/cover;
-}
-
-section#mission .background_missionOverlay {
-  background: rgba(36, 31, 102, 0.56);
-}
-
-section#mission .block_mission_text {
-  background: rgba(84, 113, 180, 0.63);
-  padding: 45px 40px 70px 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-  section#mission .block_mission_text {
-    margin-left: 110px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  section#mission .block_mission_text {
-    width: 570px;
-    margin-left: 25px;
-  }
-}
-
-section#team .block_team_img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  -webkit-box-shadow: 11px 11px 38px 0 rgba(6, 42, 57, 0.22);
-  box-shadow: 11px 11px 38px 0 rgba(6, 42, 57, 0.22);
-}
-
-section#team .block_team_img.team_img1 {
-  background: url(../img/team/team1.jpg) no-repeat 50% 50%/cover;
-}
-
-section#team .block_team_img.team_img2 {
-  background: url(../img/team/team2.jpg) no-repeat 50% 50%/cover;
-}
-
-section#team .block_team_img.team_img3 {
-  background: url(../img/team/team3.jpg) no-repeat 50% 50%/cover;
-}
-
-section#team .block_team_img.team_img4 {
-  background: url(../img/team/team4.jpeg) no-repeat 50% 50%/cover;
-}
-
-section#testimonials .block_testimonials {
-  position: relative;
-  padding: 40px;
-  border-radius: 20px;
-}
-
-section#testimonials .block_testimonials .background_testimonialImg {
-  background: url(../img/testimonials-bg.jpg) no-repeat 50% 50%/cover, #3c506f;
-}
-
-section#testimonials .block_testimonials .background_testimonialOverlay2 {
-  background: rgba(84, 113, 180, 0.42);
-}
-
-section#testimonials .block_testimonials .background_testimonialOverlay3 {
-  background: rgba(74, 195, 199, 0.29);
-}
-
-@media (min-width: 992px) {
-  section#testimonials .block_testimonials {
-    min-height: 351px;
-  }
-}
-
-section#pricing .block_pricingCard {
-  color: #fff;
-  border-radius: 20px;
-  padding: 50px 20px 60px;
-  margin-top: 20px;
-}
-
-section#pricing .block_pricingCard.pack_one {
-  background: #241f66;
-}
-
-section#pricing .block_pricingCard.pack_two {
-  background: #3a3c67;
-}
-
-section#pricing .block_pricingCard.pack_three {
-  background: #5471b4;
-}
-
-section#pricing .block_pricingCard.pack_four {
-  background: #7ed7da;
-}
-
-@media (min-width: 768px) {
-  section#pricing .block_pricingCard {
-    min-height: 439px;
-  }
 }
 
 section#footer {

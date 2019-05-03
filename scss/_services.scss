@@ -19,13 +19,13 @@ section#services {
     padding: 45px 80px;
   }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
-  section#services .block_service_text {
-    padding: 10px;
-  }
-}
 @media (max-width: 767px) {
   section#services .block_service_text {
     padding: 20px 30px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  section#services .block_service_text {
+    padding: 10px;
   }
 }

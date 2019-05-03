@@ -1,0 +1,18 @@
+// Styling for the additional services section
+section#addServices {
+  position: relative;
+  .background_addImg {
+    background: url(../img/add-services-bg.png) no-repeat 41.25% 44.78% / cover;
+  }
+  .background_addOverlay {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  .block_add_service {
+    @include price-font;
+    background-color: #fff;
+    padding: 16px;
+    img {
+      width: 64px;
+    }
+  }
+}

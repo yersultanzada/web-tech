@@ -55,11 +55,6 @@ section#about {
     border-radius: 10px;
   }
 }
-@media (min-width: 992px) {
-  section#about .block_devices {
-    margin-right: 0;
-  }
-}
 @media (min-width: 768px) {
   section#about .block_devices {
     max-width: 650px;
@@ -86,6 +81,11 @@ section#about {
     }
   }
 }
+@media (min-width: 992px) {
+  section#about .block_devices {
+    margin-right: 0;
+  }
+}
 
 // Styling for the mission section
 section#mission {
@@ -104,15 +104,15 @@ section#mission {
     border-radius: 10px;
   }
 }
-@media (min-width: 992px) {
-  section#mission .block_mission_text {
-    margin-left: 110px !important;
-  }
-}
 @media (min-width: 768px) {
   section#mission .block_mission_text {
     width: 570px;
     margin-left: 25px;
+  }
+}
+@media (min-width: 992px) {
+  section#mission .block_mission_text {
+    margin-left: 110px !important;
   }
 }
 

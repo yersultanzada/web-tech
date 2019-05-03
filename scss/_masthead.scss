@@ -12,6 +12,14 @@ section#masthead {
     padding-bottom: 50px;
   }
 }
+@media (max-width: 767px) {
+  section#masthead .block_intro {
+    padding-top: 0;
+  }
+  section#masthead .wt-section-heroTitle {
+    font-size: 40px;
+  }
+}
 @media (min-width: 992px) {
   section#masthead {
     .block_intro {
@@ -26,13 +34,5 @@ section#masthead {
     &.main_page {
       height: 100vh;
     }
-  }
-}
-@media (max-width: 767px) {
-  section#masthead .block_intro {
-    padding-top: 0;
-  }
-  section#masthead .wt-section-heroTitle {
-    font-size: 40px;
   }
 }

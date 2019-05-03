@@ -1,0 +1,37 @@
+// Styling for the our projects section
+section#ourProjects {
+  position: relative;
+  .background_projectsImg {
+    background: url(../img/price-more-bg.png) no-repeat left top / contain, rgb(255, 255, 255);
+  }
+  .background_projectsOverlay {
+    background: rgba(48, 34, 81, 0.9);
+  }
+  .col-12 {
+    margin-bottom: 30px;
+  }
+  .block_projects_card {
+    .block_card_img {
+      padding: 35%;
+      &.img_1 {
+        padding: 41%;
+        background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+      }
+      &.img_2 {
+        background: url(../img/portfolio/proj2.png) no-repeat 50% 50%/cover;
+      }
+      &.img_3 {
+        background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+      }
+    }
+    .block_card_body {
+      background-color: #fff;
+      padding: 15px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  section#ourProjects .block_projects_card .img_1 {
+    min-height: 640px;
+  }
+}

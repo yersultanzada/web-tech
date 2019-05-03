@@ -5,22 +5,66 @@ section#pricing {
     border-radius: 20px;
     padding: 50px 20px 60px;
     margin-top: 20px;
+    .wt-section-subheading {
+      @include price-font;
+    }
+    img {
+      width: 85px;
+    }
     &.pack_one {
       background: rgb(36, 31, 102);
     }
     &.pack_two {
       background: rgb(58, 60, 103);
     }
-    &.pack_three {
-      background: rgb(84, 113, 180);
-    }
-    &.pack_four {
-      background: rgb(126, 215, 218);
-    }
   }
 }
-@media (min-width: 768px) {
-  section#pricing .block_pricingCard {
-    min-height: 439px;
+
+// Styling for the pricing-more section
+section#pricing-more-light, section#pricing-more-dark {
+  position: relative;
+  .background_pricingMoreImg {
+    background: url(../img/price-more-bg.png) no-repeat left top / contain, rgb(255, 255, 255);
+  }
+  .background_pricingMoreOverlay {
+    background: rgba(228, 226, 101, 0.8);
+  }
+  .background_pricingMoreDarkOverlay {
+    background: rgba(48, 34, 81, 0.9);
+  }
+  .block_pricingMoreCard {
+    color: #fff;
+    padding: 50px 20px 60px;
+    &.pack_light {
+      background-color: #302251;
+    }
+    &.pack_dark {
+      background-color: #E4E265;
+      color: $primary;
+    }
+  }
+  .table {
+    thead {
+      th {
+        font-size: 22px;
+        border-bottom: none;
+        border-top: none;
+      }
+    }
+    td {
+      font-size: 18px;
+      border-top: 1px solid #000;
+    }
+    tr.price {
+      td {
+        padding-top: 25px;
+        .wt-section-heroTitle {
+          font-size: 40px;
+        }
+        .btn {
+          width: 160px;
+        }
+      }
+    }
   }
 }
