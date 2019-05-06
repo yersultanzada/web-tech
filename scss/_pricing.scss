@@ -6,22 +6,19 @@ section#pricing {
     padding: 50px 20px 60px;
     margin-top: 20px;
     .wt-section-subheading {
-      @include price-font;
+      font-size: 30px;
     }
     img {
       width: 85px;
     }
     &.pack_one {
-      background: rgb(36, 31, 102);
-    }
-    &.pack_two {
       background: rgb(58, 60, 103);
     }
   }
 }
 
 // Styling for the pricing-more section
-section#pricing-more-light, section#pricing-more-dark {
+section#pricing-more-light {
   position: relative;
   .background_pricingMoreImg {
     background: url(../img/price-more-bg.png) no-repeat left top / contain, rgb(255, 255, 255);
@@ -29,18 +26,11 @@ section#pricing-more-light, section#pricing-more-dark {
   .background_pricingMoreOverlay {
     background: rgba(228, 226, 101, 0.8);
   }
-  .background_pricingMoreDarkOverlay {
-    background: rgba(48, 34, 81, 0.9);
-  }
   .block_pricingMoreCard {
     color: #fff;
     padding: 50px 20px 60px;
     &.pack_light {
       background-color: #302251;
-    }
-    &.pack_dark {
-      background-color: #E4E265;
-      color: $primary;
     }
   }
   .table {

@@ -179,9 +179,9 @@ form.wt-form-rounded {
 .wt-btn-size-md {
   padding: 12px 24px;
 }
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+.wt-btn-size-xl {
+  font-size: 16px;
+  padding: 15px 30px;
 }
 
 .btn-primary {
@@ -251,12 +251,22 @@ form.wt-form-rounded {
 .wt-btn-rounded {
   border-radius: 25px;
 }
-.wt-btn-rounded-transparent {
+.wt-btn-transparent {
   background-color: transparent;
   border-color: white;
   color: white !important;
-  border-radius: 25px;
   border-width: 1px;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: transparent !important;
+    border-color: #e9e765 !important;
+    color: #e9e765 !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
 }
 
 // Highlight color customization
@@ -282,6 +292,9 @@ img::-moz-selection {
 @media (max-width: 767px) {
   section {
     padding: 30px 0;
+  }
+  section h1.wt-section-heroTitle {
+    font-size: 40px;
   }
   section h2.wt-section-title {
     font-size: 26px;

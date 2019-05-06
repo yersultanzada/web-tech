@@ -199,9 +199,9 @@ form.wt-form-rounded .btn {
   padding: 12px 24px;
 }
 
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+.wt-btn-size-xl {
+  font-size: 16px;
+  padding: 15px 30px;
 }
 
 .btn-primary {
@@ -276,12 +276,22 @@ form.wt-form-rounded .btn {
   border-radius: 25px;
 }
 
-.wt-btn-rounded-transparent {
+.wt-btn-transparent {
   background-color: transparent;
   border-color: white;
   color: white !important;
-  border-radius: 25px;
   border-width: 1px;
+}
+
+.wt-btn-transparent:active, .wt-btn-transparent:focus, .wt-btn-transparent:hover {
+  background-color: transparent !important;
+  border-color: #e9e765 !important;
+  color: #e9e765 !important;
+}
+
+.wt-btn-transparent:active, .wt-btn-transparent:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
 ::-moz-selection {
@@ -309,6 +319,9 @@ img::-moz-selection {
 @media (max-width: 767px) {
   section {
     padding: 30px 0;
+  }
+  section h1.wt-section-heroTitle {
+    font-size: 40px;
   }
   section h2.wt-section-title {
     font-size: 26px;
@@ -452,9 +465,6 @@ section#masthead .block_intro {
 @media (max-width: 767px) {
   section#masthead .block_intro {
     padding-top: 0;
-  }
-  section#masthead .wt-section-heroTitle {
-    font-size: 40px;
   }
 }
 
@@ -779,7 +789,7 @@ section#pricing .block_pricingCard {
 }
 
 section#pricing .block_pricingCard .wt-section-subheading {
-  font-family: 'Anonymous Pro', monospace;
+  font-size: 30px;
 }
 
 section#pricing .block_pricingCard img {
@@ -787,63 +797,50 @@ section#pricing .block_pricingCard img {
 }
 
 section#pricing .block_pricingCard.pack_one {
-  background: #241f66;
-}
-
-section#pricing .block_pricingCard.pack_two {
   background: #3a3c67;
 }
 
-section#pricing-more-light, section#pricing-more-dark {
+section#pricing-more-light {
   position: relative;
 }
 
-section#pricing-more-light .background_pricingMoreImg, section#pricing-more-dark .background_pricingMoreImg {
+section#pricing-more-light .background_pricingMoreImg {
   background: url(../img/price-more-bg.png) no-repeat left top/contain, white;
 }
 
-section#pricing-more-light .background_pricingMoreOverlay, section#pricing-more-dark .background_pricingMoreOverlay {
+section#pricing-more-light .background_pricingMoreOverlay {
   background: rgba(228, 226, 101, 0.8);
 }
 
-section#pricing-more-light .background_pricingMoreDarkOverlay, section#pricing-more-dark .background_pricingMoreDarkOverlay {
-  background: rgba(48, 34, 81, 0.9);
-}
-
-section#pricing-more-light .block_pricingMoreCard, section#pricing-more-dark .block_pricingMoreCard {
+section#pricing-more-light .block_pricingMoreCard {
   color: #fff;
   padding: 50px 20px 60px;
 }
 
-section#pricing-more-light .block_pricingMoreCard.pack_light, section#pricing-more-dark .block_pricingMoreCard.pack_light {
+section#pricing-more-light .block_pricingMoreCard.pack_light {
   background-color: #302251;
 }
 
-section#pricing-more-light .block_pricingMoreCard.pack_dark, section#pricing-more-dark .block_pricingMoreCard.pack_dark {
-  background-color: #E4E265;
-  color: #241f66;
-}
-
-section#pricing-more-light .table thead th, section#pricing-more-dark .table thead th {
+section#pricing-more-light .table thead th {
   font-size: 22px;
   border-bottom: none;
   border-top: none;
 }
 
-section#pricing-more-light .table td, section#pricing-more-dark .table td {
+section#pricing-more-light .table td {
   font-size: 18px;
   border-top: 1px solid #000;
 }
 
-section#pricing-more-light .table tr.price td, section#pricing-more-dark .table tr.price td {
+section#pricing-more-light .table tr.price td {
   padding-top: 25px;
 }
 
-section#pricing-more-light .table tr.price td .wt-section-heroTitle, section#pricing-more-dark .table tr.price td .wt-section-heroTitle {
+section#pricing-more-light .table tr.price td .wt-section-heroTitle {
   font-size: 40px;
 }
 
-section#pricing-more-light .table tr.price td .btn, section#pricing-more-dark .table tr.price td .btn {
+section#pricing-more-light .table tr.price td .btn {
   width: 160px;
 }
 
