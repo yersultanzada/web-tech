@@ -19,31 +19,61 @@ section#callToAction {
   .background_callToActionOverlay {
     background: rgba(14, 38, 130, 0.6);
   }
-  .block_formCenter {
-    background-color: #fff;
-    padding: 40px 40px 50px;
-    width: 100%;
-    max-width: 550px;
-    border-radius: 3px;
-    margin: 0 auto;
-    form{
-      input {
-        background-color: #E1E1E1;
-        padding: 10px 30px;
-        height: inherit;
-        font-size: 12px;
+  .block_getContact_1 {
+    padding: 25px 25px 35px 25px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    img {
+      border-radius: 50%;
+      width: auto;
+      margin-bottom: 15px;
+    }
+    .getContact_text {
+      background-color: #fff;
+      border-radius: 10px;
+      border-top-left-radius: 0;
+      padding: 25px;
+    }
+    a i {
+      font-size: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+  }
+  .block_getContact_2 {
+    .getContact_img {
+      width: 100px;
+      height: 100px;
+      padding: 18px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .wt-section-text {
+      span {
+        background-color: #c4c255;
       }
     }
   }
 }
-
+@media (min-width: 576px) {
+  section#callToAction {
+    .block_getContact_1 {
+      padding: 35px 35px 45px 35px;
+      img {
+        width: 100%;
+        margin-bottom: 0;
+      }
+      .getContact_text {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
 @media (min-width: 992px) {
   section#callToAction {
     .background_callToActionImg {
       background-attachment: fixed;
-    }
-    .block_formCenter {
-      padding: 60px 80px 70px;
     }
   }
 }

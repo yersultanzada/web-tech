@@ -170,6 +170,7 @@ form.wt-form-rounded {
 .btn {
   font-size: 14px;
   line-height: 1.2;
+  white-space: normal;
   @include main-font;
 }
 .wt-btn-size-sm {
@@ -180,11 +181,11 @@ form.wt-form-rounded {
   padding: 12px 24px;
 }
 .wt-btn-size-xl {
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 30px;
 }
 
-.btn-primary {
+.wt-btn-primary {
   background-color: #5470b4;
   border-color: #5470b4;
   color: white !important;
@@ -200,7 +201,7 @@ form.wt-form-rounded {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
-.btn-white {
+.wt-btn-white {
   background-color: white;
   border-color: white;
   color: $primary !important;
@@ -216,7 +217,7 @@ form.wt-form-rounded {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
-.btn-black {
+.wt-btn-black {
   background-color: black;
   border-color: black;
   color: white !important;
@@ -232,7 +233,7 @@ form.wt-form-rounded {
     box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
   }
 }
-.btn-yellow {
+.wt-btn-yellow {
   background-color: #e9e765;
   border-color: #e9e765;
   color: black !important;
@@ -242,6 +243,22 @@ form.wt-form-rounded {
     background-color: white !important;
     border-color: white !important;
     color: black !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+  }
+}
+.wt-btn-green {
+  background-color: #00E676;
+  border-color: #00E676;
+  color: white !important;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken(#00E676, 7.5%) !important;
+    border-color: darken(#00E676, 7.5%) !important;
+    color: white !important;
   }
   &:active,
   &:focus {

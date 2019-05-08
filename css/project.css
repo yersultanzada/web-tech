@@ -187,6 +187,7 @@ form.wt-form-rounded .btn {
 .btn {
   font-size: 14px;
   line-height: 1.2;
+  white-space: normal;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -200,74 +201,91 @@ form.wt-form-rounded .btn {
 }
 
 .wt-btn-size-xl {
-  font-size: 16px;
+  font-size: 15px;
   padding: 15px 30px;
 }
 
-.btn-primary {
+.wt-btn-primary {
   background-color: #5470b4;
   border-color: #5470b4;
   color: white !important;
 }
 
-.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+.wt-btn-primary:active, .wt-btn-primary:focus, .wt-btn-primary:hover {
   background-color: #455f9d !important;
   border-color: #455f9d !important;
   color: white !important;
 }
 
-.btn-primary:active, .btn-primary:focus {
+.wt-btn-primary:active, .wt-btn-primary:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.btn-white {
+.wt-btn-white {
   background-color: white;
   border-color: white;
   color: #241f66 !important;
 }
 
-.btn-white:active, .btn-white:focus, .btn-white:hover {
+.wt-btn-white:active, .wt-btn-white:focus, .wt-btn-white:hover {
   background-color: #5470b4 !important;
   border-color: #5470b4 !important;
   color: white !important;
 }
 
-.btn-white:active, .btn-white:focus {
+.wt-btn-white:active, .wt-btn-white:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.btn-black {
+.wt-btn-black {
   background-color: black;
   border-color: black;
   color: white !important;
 }
 
-.btn-black:active, .btn-black:focus, .btn-black:hover {
+.wt-btn-black:active, .wt-btn-black:focus, .wt-btn-black:hover {
   background-color: white !important;
   border-color: white !important;
   color: black !important;
 }
 
-.btn-black:active, .btn-black:focus {
+.wt-btn-black:active, .wt-btn-black:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
-.btn-yellow {
+.wt-btn-yellow {
   background-color: #e9e765;
   border-color: #e9e765;
   color: black !important;
 }
 
-.btn-yellow:active, .btn-yellow:focus, .btn-yellow:hover {
+.wt-btn-yellow:active, .wt-btn-yellow:focus, .wt-btn-yellow:hover {
   background-color: white !important;
   border-color: white !important;
   color: black !important;
 }
 
-.btn-yellow:active, .btn-yellow:focus {
+.wt-btn-yellow:active, .wt-btn-yellow:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.wt-btn-green {
+  background-color: #00E676;
+  border-color: #00E676;
+  color: white !important;
+}
+
+.wt-btn-green:active, .wt-btn-green:focus, .wt-btn-green:hover {
+  background-color: #00c062 !important;
+  border-color: #00c062 !important;
+  color: white !important;
+}
+
+.wt-btn-green:active, .wt-btn-green:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
@@ -509,7 +527,7 @@ section#about .block_devices .block_device_iPad .block_iPad_pic {
   left: 18px;
   width: 224px;
   height: 168px;
-  background: url(../img/about/about-ipad-pic.png) no-repeat 50% 50%/cover;
+  background: url(../img/about/about-ipad-pic.JPG) no-repeat 50% 50%/cover;
   -webkit-box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 20px 10px 80px 10px rgba(0, 0, 0, 0.2);
 }
@@ -534,7 +552,7 @@ section#about .block_devices .block_device_iPhone .block_iPhone_pic {
   left: 6px;
   width: 81px;
   height: 175px;
-  background: url(../img/about/about-iphone-pic.jpg) no-repeat 50% 50%/cover;
+  background: url(../img/about/about-iphone-pic.JPG) no-repeat 50% 50%/cover;
   -webkit-box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
 }
@@ -759,15 +777,15 @@ section#ourProjects .block_projects_card .block_card_img {
 
 section#ourProjects .block_projects_card .block_card_img.img_1 {
   padding: 41%;
-  background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+  background: url(../img/portfolio/project1.png) no-repeat 50% 50%/cover;
 }
 
 section#ourProjects .block_projects_card .block_card_img.img_2 {
-  background: url(../img/portfolio/proj2.png) no-repeat 50% 50%/cover;
+  background: url(../img/portfolio/project2.png) no-repeat 50% 50%/cover;
 }
 
 section#ourProjects .block_projects_card .block_card_img.img_3 {
-  background: url(../img/portfolio/proj1.png) no-repeat 50% 50%/cover;
+  background: url(../img/portfolio/project3.png) no-repeat 50% 50%/cover;
 }
 
 section#ourProjects .block_projects_card .block_card_body {
@@ -915,28 +933,60 @@ section#callToAction .background_callToActionOverlay {
   background: rgba(14, 38, 130, 0.6);
 }
 
-section#callToAction .block_formCenter {
-  background-color: #fff;
-  padding: 40px 40px 50px;
-  width: 100%;
-  max-width: 550px;
-  border-radius: 3px;
-  margin: 0 auto;
+section#callToAction .block_getContact_1 {
+  padding: 25px 25px 35px 25px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 
-section#callToAction .block_formCenter form input {
-  background-color: #E1E1E1;
-  padding: 10px 30px;
-  height: inherit;
-  font-size: 12px;
+section#callToAction .block_getContact_1 img {
+  border-radius: 50%;
+  width: auto;
+  margin-bottom: 15px;
+}
+
+section#callToAction .block_getContact_1 .getContact_text {
+  background-color: #fff;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  padding: 25px;
+}
+
+section#callToAction .block_getContact_1 a i {
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+section#callToAction .block_getContact_2 .getContact_img {
+  width: 100px;
+  height: 100px;
+  padding: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+section#callToAction .block_getContact_2 .wt-section-text span {
+  background-color: #c4c255;
+}
+
+@media (min-width: 576px) {
+  section#callToAction .block_getContact_1 {
+    padding: 35px 35px 45px 35px;
+  }
+  section#callToAction .block_getContact_1 img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  section#callToAction .block_getContact_1 .getContact_text {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
 }
 
 @media (min-width: 992px) {
   section#callToAction .background_callToActionImg {
     background-attachment: fixed;
-  }
-  section#callToAction .block_formCenter {
-    padding: 60px 80px 70px;
   }
 }
 
