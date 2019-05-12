@@ -3,7 +3,12 @@ body {
   overflow-x: hidden;
   @include main-font;
 }
-
+body.js-no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
 p {
   line-height: 1.75;
 }
@@ -14,7 +19,12 @@ a {
     color: darken($primary, 10%);
   }
 }
-
+@font-face {
+  font-family: 'Exodus';
+  src: url('../vendor/fonts/exodus/Exodus-PersonalUse-Striped.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 .wt-text-primary {
   color: $primary !important;
 }

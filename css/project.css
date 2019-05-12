@@ -9,6 +9,13 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+body.js-no-scroll {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
 p {
   line-height: 1.75;
 }
@@ -19,6 +26,13 @@ a {
 
 a:hover {
   color: #16133f;
+}
+
+@font-face {
+  font-family: 'Exodus';
+  src: url("../vendor/fonts/exodus/Exodus-PersonalUse-Striped.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .wt-text-primary {
@@ -372,7 +386,7 @@ img::-moz-selection {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Exodus', serif;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -424,31 +438,51 @@ img::-moz-selection {
   }
 }
 
+.menu-modal#menuModal {
+  height: 100%;
+  overflow-y: hidden !important;
+}
+
 .menu-modal#menuModal .modal-dialog {
   margin: 0;
   max-width: 100vw;
+  height: 100%;
 }
 
 .menu-modal#menuModal .modal-content {
   text-align: center;
-  min-height: 100vh;
+  height: 100%;
   border: none;
   border-radius: 0;
 }
 
 .menu-modal#menuModal .modal-content .modal-body {
   padding: 20px 25px;
+  overflow-y: auto;
 }
 
 .menu-modal#menuModal .modal-content .modal-body a.menu_logo {
   font-size: 1.5em;
   font-weight: 700;
   color: #3c506f;
+  text-decoration: none;
+  font-family: 'Exodus', serif;
+}
+
+.menu-modal#menuModal .modal-content .modal-body a.nav-link {
+  display: inline-block;
+}
+
+.menu-modal#menuModal .modal-content .modal-body .modal_helper {
+  height: 67px;
 }
 
 .menu-modal#menuModal .modal-content .modal-body .request_btn {
-  position: absolute;
-  bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0 20px 0;
+  background-color: #fff;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -456,11 +490,17 @@ img::-moz-selection {
 
 .menu-modal#menuModal .close-modal {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 15px;
+  right: 15px;
   z-index: 1000;
   cursor: pointer;
   background-color: transparent;
+}
+
+.menu-modal#menuModal .close-modal a {
+  display: block;
+  padding: 10px 15px;
+  color: #241f66;
 }
 
 section#masthead {
@@ -600,33 +640,40 @@ section#mission {
   position: relative;
 }
 
-section#mission .background_missionImg {
-  background: url(../img/about/mission-bg.jpg) no-repeat 56.56% 50.54%/cover;
+section#mission .block_mission_text h2.wt-section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-section#mission .background_missionOverlay {
-  background: rgba(36, 31, 102, 0.56);
+section#mission .block_mission_text h2.wt-section-title span {
+  padding: 0 15px;
+  font-style: italic;
 }
 
-section#mission .block_mission_text {
-  background: rgba(84, 113, 180, 0.63);
-  padding: 45px 40px 70px 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
+section#mission .block_mission_text h2.wt-section-title:before, section#mission .block_mission_text h2.wt-section-title:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  -webkit-box-flex: 5;
+  -ms-flex: 5 1;
+  flex: 5 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  background-color: #A3A25C;
 }
 
-@media (min-width: 768px) {
-  section#mission .block_mission_text {
-    width: 570px;
-    margin-left: 25px;
-  }
-}
-
-@media (min-width: 992px) {
-  section#mission .block_mission_text {
-    margin-left: 110px !important;
-  }
+section#mission .block_mission_text p.wt-section-text {
+  padding-bottom: 30px;
+  margin: 0;
+  border-bottom: 1px solid #A3A25C;
+  font-style: italic;
 }
 
 section#team .block_team_img {
@@ -1024,7 +1071,9 @@ section#footer .navbar-brand {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
-  font-family: 'Permanent Marker', cursive;
+  padding: 0;
+  margin: 0;
+  font-family: 'Exodus', serif;
 }
 
 section#footer .navbar-brand.active, section#footer .navbar-brand:active, section#footer .navbar-brand:focus, section#footer .navbar-brand:hover {
