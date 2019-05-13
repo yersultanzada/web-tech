@@ -32,6 +32,9 @@ section#pricing-more-light {
     &.pack_light {
       background-color: #302251;
     }
+    .btn {
+      width: 160px;
+    }
   }
   .table {
     thead {
@@ -48,9 +51,6 @@ section#pricing-more-light {
     tr.price {
       td {
         padding-top: 25px;
-        .wt-section-heroTitle {
-          font-size: 40px;
-        }
         .btn {
           width: 160px;
         }

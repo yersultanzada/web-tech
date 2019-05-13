@@ -182,7 +182,7 @@ section p.wt-section-text {
 
 section p.wt-section-small-text {
   font-size: 12px;
-  line-height: 1.67;
+  line-height: 1.37;
   width: 100%;
 }
 
@@ -302,6 +302,12 @@ form.wt-form-rounded .btn {
 .wt-btn-green:active, .wt-btn-green:focus {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
+.wt-btn-green i {
+  font-size: 20px;
+  vertical-align: bottom;
+  margin-right: 8px;
 }
 
 .wt-btn-rounded {
@@ -701,6 +707,10 @@ section#team .block_team_img.team_img4 {
   background: url(../img/team/team4.jpeg) no-repeat 50% 50%/cover;
 }
 
+section#team p.wt-section-small-text {
+  font-size: 14px;
+}
+
 section#services .block_service_img {
   padding: 32%;
 }
@@ -886,6 +896,10 @@ section#pricing-more-light .block_pricingMoreCard.pack_light {
   background-color: #302251;
 }
 
+section#pricing-more-light .block_pricingMoreCard .btn {
+  width: 160px;
+}
+
 section#pricing-more-light .table thead th {
   font-size: 22px;
   border-bottom: none;
@@ -899,10 +913,6 @@ section#pricing-more-light .table td {
 
 section#pricing-more-light .table tr.price td {
   padding-top: 25px;
-}
-
-section#pricing-more-light .table tr.price td .wt-section-heroTitle {
-  font-size: 40px;
 }
 
 section#pricing-more-light .table tr.price td .btn {
@@ -997,12 +1007,6 @@ section#callToAction .block_getContact_1 .getContact_text {
   border-radius: 10px;
   border-top-left-radius: 0;
   padding: 25px;
-}
-
-section#callToAction .block_getContact_1 a i {
-  font-size: 20px;
-  vertical-align: middle;
-  margin-right: 8px;
 }
 
 section#callToAction .block_getContact_2 .getContact_img {
