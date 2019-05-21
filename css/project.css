@@ -372,6 +372,12 @@ img::-moz-selection {
   }
 }
 
+@media (max-width: 575px) {
+  section h1.wt-section-heroTitle {
+    font-size: 30px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 740px;
@@ -1005,7 +1011,7 @@ section#callToAction .block_getContact_1 {
 
 section#callToAction .block_getContact_1 img {
   border-radius: 50%;
-  width: auto;
+  width: 150px;
   margin-bottom: 15px;
 }
 
