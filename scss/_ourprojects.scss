@@ -27,6 +27,9 @@ section#ourProjects {
     .block_card_body {
       background-color: #fff;
       padding: 15px;
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

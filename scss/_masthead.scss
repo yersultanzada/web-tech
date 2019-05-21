@@ -10,6 +10,12 @@ section#masthead {
   .block_intro {
     padding-top: 50px;
     padding-bottom: 50px;
+    .wt-section-text {
+      span {
+        background-color: #c4c255;
+        color: white;
+      }
+    }
   }
 }
 @media (max-width: 767px) {

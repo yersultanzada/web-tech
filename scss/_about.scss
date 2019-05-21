@@ -125,8 +125,8 @@ section#mission {
 // Styling for the team section
 section#team {
   .block_team_img {
-    width: 130px;
-    height: 130px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 0 auto 15px;
     -webkit-box-shadow: 11px 11px 38px 0 rgba(6,42,57,.22);
@@ -141,7 +141,10 @@ section#team {
       background: url(../img/team/team3.jpg) no-repeat 50% 50% / cover;
     }
     &.team_img4 {
-      background: url(../img/team/team4.jpeg) no-repeat 50% 50% / cover;
+      background: url(../img/team/team4.jpg) no-repeat 50% 50% / cover;
+    }
+    &.team_img5 {
+      background: url(../img/team/team5.jpg) no-repeat 50% 50% / cover;
     }
   }
   p.wt-section-small-text {

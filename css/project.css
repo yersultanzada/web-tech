@@ -526,6 +526,11 @@ section#masthead .block_intro {
   padding-bottom: 50px;
 }
 
+section#masthead .block_intro .wt-section-text span {
+  background-color: #c4c255;
+  color: white;
+}
+
 @media (max-width: 767px) {
   section#masthead .block_intro {
     padding-top: 0;
@@ -683,8 +688,8 @@ section#mission .block_mission_text p.wt-section-text {
 }
 
 section#team .block_team_img {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto 15px;
   -webkit-box-shadow: 11px 11px 38px 0 rgba(6, 42, 57, 0.22);
@@ -704,7 +709,11 @@ section#team .block_team_img.team_img3 {
 }
 
 section#team .block_team_img.team_img4 {
-  background: url(../img/team/team4.jpeg) no-repeat 50% 50%/cover;
+  background: url(../img/team/team4.jpg) no-repeat 50% 50%/cover;
+}
+
+section#team .block_team_img.team_img5 {
+  background: url(../img/team/team5.jpg) no-repeat 50% 50%/cover;
 }
 
 section#team p.wt-section-small-text {
@@ -848,6 +857,10 @@ section#ourProjects .block_projects_card .block_card_img.img_3 {
 section#ourProjects .block_projects_card .block_card_body {
   background-color: #fff;
   padding: 15px;
+}
+
+section#ourProjects .block_projects_card .block_card_body a {
+  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
