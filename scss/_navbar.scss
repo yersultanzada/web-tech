@@ -1,16 +1,11 @@
 // Styling for the navbar
 #mainNav {
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: transparent;
   .navbar-brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    @include logo-font;
-    &.active,
-    &:active,
-    &:focus,
-    &:hover {
-      color: darken(white, 10%);
+    img {
+      height: 35px;
     }
   }
   .burger_menu {
@@ -49,11 +44,9 @@
     border: none;
     background-color: transparent;
     .navbar-brand {
-      font-size: 1.75em;
-      font-weight: bold;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
+      img {
+        height: 40px;
+      }
     }
     .navbar-nav {
       .nav-item {
@@ -81,11 +74,9 @@
       padding: 20px 25px;
       overflow-y: auto;
       a.menu_logo {
-        font-size: 1.5em;
-        font-weight: 700;
-        color: #3c506f;
-        text-decoration: none;
-        @include logo-font;
+        img {
+          height: 35px;
+        }
       }
       a.nav-link {
         display: inline-block;

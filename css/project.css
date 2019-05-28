@@ -391,18 +391,13 @@ img::-moz-selection {
 }
 
 #mainNav {
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: transparent;
 }
 
-#mainNav .navbar-brand {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  font-family: 'Exodus', serif;
-}
-
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #e6e6e6;
+#mainNav .navbar-brand img {
+  height: 35px;
 }
 
 #mainNav .burger_menu {
@@ -439,11 +434,8 @@ img::-moz-selection {
     border: none;
     background-color: transparent;
   }
-  #mainNav .navbar-brand {
-    font-size: 1.75em;
-    font-weight: bold;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+  #mainNav .navbar-brand img {
+    height: 40px;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
     padding: 1.1em !important;
@@ -473,12 +465,8 @@ img::-moz-selection {
   overflow-y: auto;
 }
 
-.menu-modal#menuModal .modal-content .modal-body a.menu_logo {
-  font-size: 1.5em;
-  font-weight: 700;
-  color: #3c506f;
-  text-decoration: none;
-  font-family: 'Exodus', serif;
+.menu-modal#menuModal .modal-content .modal-body a.menu_logo img {
+  height: 35px;
 }
 
 .menu-modal#menuModal .modal-content .modal-body a.nav-link {
@@ -1071,17 +1059,8 @@ section#footer {
   padding-bottom: 30px;
 }
 
-section#footer .navbar-brand {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  padding: 0;
-  margin: 0;
-  font-family: 'Exodus', serif;
-}
-
-section#footer .navbar-brand.active, section#footer .navbar-brand:active, section#footer .navbar-brand:focus, section#footer .navbar-brand:hover {
-  color: #e6e6e6;
+section#footer .navbar-brand img {
+  height: 35px;
 }
 
 section#footer p.wt-section-subheading {
